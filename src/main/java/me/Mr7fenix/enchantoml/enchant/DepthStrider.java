@@ -11,6 +11,6 @@ public class DepthStrider extends WaterWalkerEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+        return Level.getLevel(Config.depthStrider.get());
     }
 }

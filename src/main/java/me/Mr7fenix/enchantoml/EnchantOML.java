@@ -1,11 +1,6 @@
 package me.Mr7fenix.enchantoml;
 
 import com.mojang.logging.LogUtils;
-import me.Mr7fenix.enchantoml.enchant.Efficiency;
-import me.Mr7fenix.enchantoml.enchant.Protection;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.ProtectionEnchantment;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,10 +9,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 @Mod("enchantoml")
@@ -29,6 +20,7 @@ public class EnchantOML {
 
     public EnchantOML() {
         ConfigRegistry.register();
+        Register.init();
     }
 
     private void setup(final FMLCommonSetupEvent event) {

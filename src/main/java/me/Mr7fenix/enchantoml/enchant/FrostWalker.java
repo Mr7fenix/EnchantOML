@@ -11,6 +11,7 @@ public class FrostWalker extends FrostWalkerEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.frostWalker.get());
     }
 }

@@ -11,6 +11,7 @@ public class Thorn extends ThornsEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.thorns.get());
     }
 }

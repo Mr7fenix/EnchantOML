@@ -12,6 +12,7 @@ public class Respiration extends OxygenEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.respiration.get());
     }
 }

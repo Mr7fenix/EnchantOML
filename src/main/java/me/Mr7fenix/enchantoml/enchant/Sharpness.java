@@ -11,6 +11,7 @@ public class Sharpness extends DamageEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.sharpness.get());
     }
 }

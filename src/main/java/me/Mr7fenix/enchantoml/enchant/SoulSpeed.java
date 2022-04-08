@@ -11,6 +11,7 @@ public class SoulSpeed extends SoulSpeedEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.soulspeed.get());
     }
 }

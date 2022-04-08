@@ -11,6 +11,7 @@ public class Sweeping extends SweepingEdgeEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.sweeping.get());
     }
 }

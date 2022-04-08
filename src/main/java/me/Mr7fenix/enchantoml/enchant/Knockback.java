@@ -11,6 +11,7 @@ public class Knockback extends KnockbackEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+
+        return Level.getLevel(Config.knockback.get());
     }
 }

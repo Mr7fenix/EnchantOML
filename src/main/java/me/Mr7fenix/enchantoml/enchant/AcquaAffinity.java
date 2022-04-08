@@ -5,12 +5,13 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.WaterWalkerEnchantment;
 
 public class AcquaAffinity extends WaterWalkerEnchantment {
-    public AcquaAffinity(Rarity p_45280_, EquipmentSlot... p_45281_) {
-        super(p_45280_, p_45281_);
+
+    public AcquaAffinity(Rarity pRarity, EquipmentSlot... pApplicableSlots) {
+        super(pRarity, pApplicableSlots);
     }
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+        return Level.getLevel(Config.acquaAffinity.get());
     }
 }

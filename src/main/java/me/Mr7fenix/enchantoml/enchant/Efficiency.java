@@ -12,6 +12,6 @@ public class Efficiency extends DiggingEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+        return Level.getLevel(Config.efficiency.get());
     }
 }
