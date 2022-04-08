@@ -19,7 +19,6 @@ public class EnchantOML {
 
 
     public EnchantOML() {
-        ConfigRegistry.register();
         Register.init();
     }
 

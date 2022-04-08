@@ -14,6 +14,6 @@ public class Lure extends FishingSpeedEnchantment {
     @Override
     public int getMaxLevel() {
 
-        return Config.lure.get();
+        return Level.getLevel(Config.lure.get());
     }
 }

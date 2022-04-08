@@ -51,127 +51,112 @@ public class Config {
         builder.comment("Max level for single enchantments");
 
         acquaAffinity = builder
-                .defineInRange("AquaAffinity", 0, 1, 255);
+                .defineInRange("AquaAffinity", 0, 0, 255);
 
         blastProtection = builder
-                .defineInRange("BlastProtection", 0, 1, 255);
+                .defineInRange("BlastProtection", 0, 0, 255);
 
 
         fireProtection = builder
-                .defineInRange("FireProtection", 0, 1, 255);
+                .defineInRange("FireProtection", 0, 0, 255);
 
         featherFalling = builder
-                .defineInRange("FeatherFalling", 0, 1, 255);
+                .defineInRange("FeatherFalling", 0, 0, 255);
 
         respiration = builder
-                .defineInRange("Respiration", 0, 1, 255);
+                .defineInRange("Respiration", 0, 0, 255);
 
         depthStrider = builder
-                .defineInRange("DepthStrider", 0, 1, 255);
+                .defineInRange("DepthStrider", 0, 0, 255);
 
         thorns = builder
-                .defineInRange("Thorns", 0, 1, 255);
+                .defineInRange("Thorns", 0, 0, 255);
 
 
         sharpness = builder
-                .defineInRange("Sharpness", 0, 1, 255);
+                .defineInRange("Sharpness", 0, 0, 255);
 
 
         smite = builder
-                .defineInRange("Smite", 0, 1, 255);
+                .defineInRange("Smite", 0, 0, 255);
 
 
         baneOfArthropods = builder
-                .defineInRange("BaneOfArthropods", 0, 1, 255);
+                .defineInRange("BaneOfArthropods", 0, 0, 255);
 
 
         knockback = builder
-                .defineInRange("Knockback", 0, 1, 255);
+                .defineInRange("Knockback", 0, 0, 255);
 
 
         fireAspect = builder
-                .defineInRange("FireAspect", 0, 1, 255);
+                .defineInRange("FireAspect", 0, 0, 255);
 
 
         looting = builder
-                .defineInRange("Looting", 0, 1, 255);
+                .defineInRange("Looting", 0, 0, 255);
 
 
         efficiency = builder
-                .defineInRange("Efficiency", 0, 1, 255);
+                .defineInRange("Efficiency", 0, 0, 255);
 
 
         unbreaking = builder
-                .defineInRange("Unbreaking", 0, 1, 255);
+                .defineInRange("Unbreaking", 0, 0, 255);
 
 
         fortune = builder
-                .defineInRange("Fortune", 0, 1, 255);
+                .defineInRange("Fortune", 0, 0, 255);
 
 
         power = builder
-                .defineInRange("Power", 0, 1, 255);
-
-
-        flame = builder
-                .defineInRange("Flame", 0, 1, 255);
-
-
-        infinity = builder
-                .defineInRange("Infinity", 0, 1, 255);
+                .defineInRange("Power", 0, 0, 255);
 
 
         punch = builder
-                .defineInRange("Punch", 0, 1, 255);
+                .defineInRange("Punch", 0, 0, 255);
 
 
         luckOfTheSea = builder
-                .defineInRange("LuckOfTheSea", 0, 1, 255);
+                .defineInRange("LuckOfTheSea", 0, 0, 255);
 
 
         lure = builder
-                .defineInRange("Lure", 0, 1, 255);
+                .defineInRange("Lure", 0, 0, 255);
 
-
-        mending = builder
-                .defineInRange("Mending", 0, 1, 255);
-
-
-        silkTouch = builder
-                .defineInRange("SilkTouch", 0, 1, 255);
 
         channeling = builder
-                .defineInRange("Channeling", 0, 1, 255);
+                .defineInRange("Channeling", 0, 0, 255);
 
         frostWalker = builder
-                .defineInRange("FrostWalker", 0, 1, 255);
+                .defineInRange("FrostWalker", 0, 0, 255);
 
         impaling = builder
-                .defineInRange("Impaling", 0, 1, 255);
+                .defineInRange("Impaling", 0, 0, 255);
 
         multishot = builder
-                .defineInRange("MultiShot", 0, 1, 255);
+                .defineInRange("MultiShot", 0, 0, 255);
 
         piercing = builder
-                .defineInRange("Piercing", 0, 1, 255);
+                .defineInRange("Piercing", 0, 0, 255);
 
         quickcharge = builder
-                .defineInRange("QuickCharge", 0, 1, 255);
+                .defineInRange("QuickCharge", 0, 0, 255);
 
         riptide = builder
-                .defineInRange("Riptide", 0, 1, 255);
+                .defineInRange("Riptide", 0, 0, 255);
 
         soulspeed = builder
-                .defineInRange("SoulSpeed", 0, 1, 255);
+                .defineInRange("SoulSpeed", 0, 0, 255);
 
         sweeping = builder
-                .defineInRange("Sweeping", 0, 1, 255);
+                .defineInRange("Sweeping", 0, 0, 255);
 
         protection = builder
-                .defineInRange("Protection", 0, 1, 255);
+                .defineInRange("Protection", 0, 0, 255);
 
         projectileProtection = builder
-                .defineInRange("ProjectileProtection", 0, 1, 255);
+                .defineInRange("ProjectileProtection", 0, 0, 255);
         builder.pop();
     }
 }
