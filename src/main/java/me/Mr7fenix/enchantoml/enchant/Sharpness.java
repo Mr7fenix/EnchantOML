@@ -5,13 +5,16 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.DamageEnchantment;
 
 public class Sharpness extends DamageEnchantment {
-    public Sharpness(Rarity p_44628_, int p_44629_, EquipmentSlot... p_44630_) {
-        super(p_44628_, p_44629_, p_44630_);
+    public Sharpness(Rarity rarity, int type, EquipmentSlot... equipmentSlots) {
+        super(rarity, type, equipmentSlots);
     }
 
     @Override
     public int getMaxLevel() {
-
-        return Level.getLevel(Config.sharpness.get());
+        return switch (this.type) {
+            case 0 -> Level.getLevel(Config.sharpness.get());
+            case 1 -> Level.getLevel(Config.smite.get());
+            default -> 10;
+        };
     }
 }

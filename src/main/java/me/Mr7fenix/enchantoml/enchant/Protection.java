@@ -11,7 +11,13 @@ public class Protection extends ProtectionEnchantment {
 
     @Override
     public int getMaxLevel() {
-        return Config.maxEnchantLevel.get();
+        return switch (this.type) {
+            case ALL -> Level.getLevel(Config.protection.get());
+            case FIRE -> Level.getLevel(Config.fireProtection.get());
+            case EXPLOSION -> Level.getLevel(Config.blastProtection.get());
+            case PROJECTILE -> Level.getLevel(Config.projectileProtection.get());
+            case FALL -> Level.getLevel(Config.featherFalling.get());
+        };
     }
 
 }

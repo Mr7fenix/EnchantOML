@@ -1,10 +1,4 @@
 package me.Mr7fenix.enchantoml;
-
-
-
-
-;
-
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class Config {
@@ -42,6 +36,8 @@ public class Config {
     public static ForgeConfigSpec.IntValue riptide;
     public static ForgeConfigSpec.IntValue soulspeed;
     public static ForgeConfigSpec.IntValue sweeping;
+    public static ForgeConfigSpec.IntValue protection;
+    public static ForgeConfigSpec.IntValue projectileProtection;
 
 
     public static void registy(ForgeConfigSpec.Builder builder) {
@@ -171,7 +167,11 @@ public class Config {
         sweeping = builder
                 .defineInRange("Sweeping", 0, 1, 255);
 
+        protection = builder
+                .defineInRange("Protection", 0, 1, 255);
 
+        projectileProtection = builder
+                .defineInRange("ProjectileProtection", 0, 1, 255);
         builder.pop();
     }
 }
